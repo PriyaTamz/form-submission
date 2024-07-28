@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Database</title>
+
+    <style>
+
+        #title {
+            font-family:'Times New Roman', Times, serif;
+            margin-left: 50px;
+            margin-top: 60px;
+            position: relative;
+        }
+        #table_title {
+            font-family:'Times New Roman', Times, serif;
+            margin-left: 600px;
+            position: absolute;
+        }
+        #form {
+            margin-left: 50px;
+            position: relative;
+        }
+        input[type="text"] {
+            width: 400px;
+        }
+        input {
+            margin-top: 5px;
+        }
+        button {
+            width: 400px;
+            background-color: rgb(56, 56, 56);
+            color: white;
+        }
+        .padding {
+            padding: 5px;
+            width: 413px;
+        }
+        .main {
+            position: absolute;
+            left: 600px; 
+            top: 130px;
+        }
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .table th {
+            background-color: rgb(56, 56, 56);
+            color: white;
+            font-family:serif;
+        }
+        .table th, .table td {
+            width: 120px;
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .table tr:nth-child(even){background-color: #f2f2f2}
+        #submit {
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1 id="table_title">Temporary Database</h1>
+    <h1 id="title">Form Submission:</h1>
+    <p id="description">Choice of Food: (must choose at least 2 out of 5)</p>
+
+    <form id="form">
+        <button id="submit" class="btn btn-primary"></button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
